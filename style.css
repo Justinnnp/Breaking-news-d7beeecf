@@ -27,16 +27,20 @@
 }
 
 .content>.news {
-    flex: 0 1 calc(100%/2);
+    flex: 0 1 calc(100%/4);
     order: 2;
 }
 
 #breaking {
     text-align: center;
-    font-size: 25px;
     order: 1;
+    flex: 0 1 50%;
 }
 
 #breaking>p {
     padding: 40px 0 0 0;
+}
+
+#breaking>h3 {
+    font-size: 45px;
 }
