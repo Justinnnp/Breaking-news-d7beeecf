@@ -12,16 +12,31 @@
 
 .content {
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
     background-color: #faebd7;
     padding: 50px 0 50px 0;
+    order: 2;
 }
 
 .content>h1, .content>p {
-    flex: 0 1 100%;
     text-align: center;
+    flex: 0 1 100%;
+    padding: 20px 0 10px 0;
+    order: 2;
 }
 
-.content .news {
-    flex: 0 1 calc(100%/3);
+.content>.news {
+    flex: 0 1 calc(100%/2);
+    order: 2;
+}
+
+#breaking {
+    text-align: center;
+    font-size: 25px;
+    order: 1;
+}
+
+#breaking>p {
+    padding: 40px 0 0 0;
 }
